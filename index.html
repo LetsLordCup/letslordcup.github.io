@@ -1,52 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - LetsLordCup</title>
-    <style>
-        body {
-            margin: 10px;
-            font-family: sans-serif;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LetsLordCup</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
-
     <center>
-        <h1>Sorry, we are currently building this page.</h1>
+        <h1>Sorry, this website is corrently under maintenance!</h1>
+        <h6>There are some hidden paths, you know ;)</h6>
+        <a href="mailto:letslordcup@outlook.com">Mail-Contact</a>
+        <div id="error"
+            style="color:white; background-color: red; margin-left:100px; margin-right:100px; border-radius: 20px;">
+        </div>
     </center>
-
-    <script>
-
-        if (getLoadCode() == "discord") {
-            window.location.href = "https://discord.com/invite/ZShQsKXFKd";
-        }
-        else if (getLoadCode() == "twitch") {
-            window.location.href = "https://twitch.com/letslordcup";
-        }
-        else if (getLoadCode() == "youtube") {
-            window.location.href = "https://www.youtube.com/channel/UC4nSKXf5N_Xekb-zLwG1NXg";
-        }
-        else if (getLoadCode() == "mail") {
-            window.location.href = "mailto://letslordcup@outlook.com";
-        }
-        else if (getLoadCode() == "rickroll") {
-            // Sorry, I had to do it😒
-            window.location.href = "https://youtu.be/dQw4w9WgXcQ?si=DsJQqio6f-9WRWOV";
-        }
-
-        function getLoadCode() {
-            root = window.location.href
-
-            loadcode = root.split("?")[1]
-
-            return loadcode
-
-        }
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="/rootsystem.js"></script>
 </body>
 
 </html>
